@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення товару</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+<h1>Замовлення товару</h1>
+
+<label for="name">Ім'я покупця:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="surname">Прізвище:</label><br>
+<input type="text" id="surname" name="surname" required><br><br>
+
+<label for="email">Електронна пошта:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="phone">Номер телефону:</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="quantity">Кількість товару:</label><br>
+<input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+<label for="address">Адреса доставки:</label><br>
+<input type="text" id="address" name="address" minlength="10" required><br><br>
+
+<label>Спосіб доставки:</label><br>
+<label><input type="radio" name="delivery" value="pickup" required> Самовивіз</label><br>
+<label><input type="radio" name="delivery" value="postomat"> Поштомат</label><br>
+<label><input type="radio" name="delivery" value="courier"> Кур'єр</label><br><br>
+
+<label>Додаткові параметри:</label><br>
+<label><input type="checkbox" name="options" value="gift"> Подарункова упаковка</label><br>
+<label><input type="checkbox" name="options" value="warranty"> Додаткова гарантія</label><br>
+<label><input type="checkbox" name="options" value="sms"> SMS-повідомлення</label><br>
+<label><input type="checkbox" name="options" value="call"> Телефонний дзвінок перед доставкою</label><br><br>
+
+<label for="payment">Спосіб оплати:</label><br>
+<select id="payment" name="payment" required>
+    <option value="">-- Оберіть спосіб оплати --</option>
+    <option value="card">Оплата карткою</option>
+    <option value="cash">Оплата при отриманні</option>
+    <option value="bank">Банківський переказ</option>
+</select><br><br>
+
+<label for="comment">Коментар до замовлення:</label><br>
+<textarea id="comment" name="comment" maxlength="200" rows="6"></textarea><br><br>
+
+<button type="submit">Оформити замовлення</button>
+<button type="reset">Очистити форму</button>
+
+</form>
+
+</body>
+</html>
